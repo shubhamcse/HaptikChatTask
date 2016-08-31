@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="message_window_margin_right">10dp</dimen>
+    <dimen name="message_window_padding">8dp</dimen>
+
+    <dimen name="contact_image_size">36dp</dimen>
+    <dimen name="chat_margin_left">-5dp</dimen>
+    <dimen name="chat_margin_top">15dp</dimen>
+    <dimen name="chat_min_width">70dp</dimen>
+    <dimen name="star_size">15dp</dimen>
+
+    <dimen name="text_view_chat_margin_top">5dp</dimen>
+    <dimen name="username_text_size">12sp</dimen>
+    <dimen name="text_view_time_margin_top">5dp</dimen>
+</resources>

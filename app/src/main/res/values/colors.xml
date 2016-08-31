@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="chat_outgoing">#8f54bf</color>
+    <color name="chat_incoming">#0099cc</color>
+    <color name="chat_time">#dffbfbfc</color>
+
+    <color name="unFavouriteMessage">#a5e9e7e7</color>
+    <color name="favouriteMessage">#fef1c33c</color>
+
+    <color name="participant_name">#bb000000</color>
+    <color name="messages">#8a000000</color>
+    <color name="favourite_messages">#65000000</color>
+
+    <color name="dividerColor">#95b6b6b6</color>
+</resources>

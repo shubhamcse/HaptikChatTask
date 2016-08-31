@@ -1,0 +1,77 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relativeLayout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginRight="@dimen/message_window_margin_right"
+    android:padding="@dimen/message_window_padding">
+
+    <com.shubham.haptikchattask.customViews.CircleImageView
+        android:id="@+id/contact_image"
+        android:layout_width="@dimen/contact_image_size"
+        android:layout_height="@dimen/contact_image_size"
+        android:layout_centerVertical="true"
+        android:src="@drawable/ic_contacts" />
+
+    <ImageView
+        android:id="@+id/imageViewArrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/contact_image"
+        android:contentDescription="@string/app_name"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_arrow_left" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayoutChat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minWidth="@dimen/chat_min_width"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="@dimen/chat_margin_left"
+        android:layout_marginTop="@dimen/chat_margin_top"
+        android:layout_toRightOf="@id/imageViewArrow"
+        android:background="@color/chat_incoming"
+        android:padding="@dimen/message_window_padding">
+
+        <TextView
+            android:id="@+id/textView_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="a"
+            android:textColor="@color/chat_time"
+            android:textSize="@dimen/username_text_size" />
+
+        <TextView
+            android:id="@+id/textView_chat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView_username"
+            android:layout_marginTop="@dimen/text_view_chat_margin_top"
+            android:text="sdsd sd sd sd sd  ssd sd sd ds d  ds sd "
+            android:textColor="@android:color/white" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textView_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relativeLayoutChat"
+        android:layout_marginTop="@dimen/text_view_time_margin_top"
+        android:layout_toRightOf="@+id/imageViewArrow"
+        android:text="3:00 pm"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/username_text_size" />
+
+    <ImageView
+        android:id="@+id/imageview_isStarred"
+        android:layout_width="@dimen/star_size"
+        android:layout_height="@dimen/star_size"
+
+        android:layout_below="@+id/relativeLayoutChat"
+        android:layout_alignRight="@+id/relativeLayoutChat"
+        android:layout_marginTop="@dimen/text_view_time_margin_top"
+        android:src="@drawable/ic_star_filed"
+        android:tint="@color/unFavouriteMessage" />
+</RelativeLayout>
